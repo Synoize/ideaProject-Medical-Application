@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Near Dr., NearDr., Neardr, NEARDR., NEARDR, neardr.">
+    <meta name="description" content="----------------------">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Health Education | Near Dr.</title>
+</head>
+
+<body>
+    <header class="fixed -mt-20 w-full bg-slate-100 shadow-lg shadow-state-500/50">
+
+        <div class=" w-full h-22 p-4 flex flex-row justify-between items-center gap-4">
+
+            <!-- code for logo -->
+            <a href="/index.html" title="Near Dr."><img src="/near dr. logo.png" alt="Near Dr." class="w-24"></a>
+            <!-- code for logo -->
+
+            <!-- code for search -->
+            <form action="#" class="flex w-full justify-center" >
+
+                <input placeholder="What's Your Problem!" name="search"
+                    class="w-5/6 outline-none pl-4 p-2 border hidden         sm:block">
+
+                <button title="search" class="w-11 h-11 p-2 border bg-white hidden hover:bg-slate-50         sm:block">
+                    <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #d3d3d3;" class="border-2"></i>
+                </button>
+
+                <!-- for blank space -->
+                <div class="w-5/6 sm:hidden"></div>
+                <!-- for blank space -->
+
+                <button title="search" onclick="searchBtn()" class="w-11 h-11 p-2 border bg-white hover:bg-slate-50       sm:hidden">
+                    <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #d3d3d3;" class="border-2"></i>
+                </button>
+            </form>
+            <!-- code for search -->
+
+            <!-- code for menu -->
+            <ul class="hidden sm:block sm:flex sm:gap-6 sm:mt-2 sm:mr-2">
+                <li class="flex flex-row  items-center">
+                    <a href="index.html" class="flex flex-col  items-center gap-1"><i class="fa-solid fa-house fa-sm"
+                            style="color: #888888;"></i>
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li class="flex flex-col  items-center gap-1">
+                    <a onclick="messages()" href="#" class="flex flex-col  items-center gap-1"><i
+                            class="fa-solid fa-message fa-sm" style="color: #888888;"></i>
+                        <p>Messaging</p>
+                    </a>
+                </li>
+                <li class="flex flex-col  items-center gap-1">
+                    <a onclick="notifications()" href="#" class="flex flex-col  items-center gap-1"><i
+                            class="fa-solid fa-bell fa-lg" style="color: #888888;"></i>
+                        <p>Notifications</p>
+                    </a>
+                </li>
+            </ul>
+            <!-- code for menu -->
+
+            <!-- code for login button -->
+            <button class="w-20 bg-blue-500 pl-4 pr-4 p-1.5 text-white hover:bg-blue-600 hover:rounded"><a
+                href="/login Page/login-page.html" class="">Login</a></button>
+        <!-- code for login button -->
+
+            <!-- code for in mobile menu -->
+            <span title="menu" onclick="open_ddMenu()" class="cursor-pointer sm:hidden"><i class="fa-solid fa-bars fa-xl"
+                    style="color: #89898b;"></i></span>
+            <!-- code for in mobile menu -->
+        </div>
+
+        <!-- code for in mobile menu dropdown-->
+        <div id="mobile_ddMenu" class="fixed hidden w-full h-full flex ">
+            <ul class="w-4/6 h-full bg-slate-200">
+                <li class="p-3 bg-blue-500 flex justify-between items-center ">
+                    <span class="pl-1.5">Menu</span>
+                    <i class="fa-solid fa-x fa-lg cursor-pointer" style="color: #b8b8b8;" onclick="close_dd()"></i>
+                </li>
+
+                <li class="pl-4 p-2.5  bg-slate-200 hover:bg-slate-100">
+                    <a href="index.html" class="flex flex-row items-center gap-3"><i class="fa-solid fa-house fa-sm"
+                            style="color: #888888;"></i>
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li class="pl-4 p-2.5  bg-slate-200 hover:bg-slate-100">
+                    <a onclick="messages()" href="#" class="flex flex-row items-center gap-3"><i
+                            class="fa-solid fa-message fa-sm" style="color: #888888;"></i>
+                        <p>Messaging</p>
+                    </a>
+                </li>
+                <li class="pl-4 p-2.5 bg-slate-200 hover:bg-slate-100">
+                    <a onclick="notifications()" href="#" class="flex flex-row items-center gap-3"><i
+                            class="fa-solid fa-bell fa-lg" style="color: #888888;"></i>
+                        <p>Notifications</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- code for in mobile menu dropdown-->
+
+        <!-- code for mobile search dropdown -->
+        <div id="search_dd" class="hidden w-full h-18 p-2 bg-slate-200 sm:hidden">
+            <form action="#" class="flex w-full justify-center">
+                <input type="search" placeholder="What's Your Problem!" name="search"
+                    class="w-5/6 outline-none pl-4 p-2 border ">
+
+                <button title="search" id=" search-btn" onclick="searchIcon()"
+                    class="w-11 h-11 p-2 border bg-white float-right hover:bg-slate-50 ">
+                    <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #d3d3d3;" class="border-2"></i>
+                </button>
+            </form>
+        </div>
+        <!-- code for mobile search dropdown -->
+
+    </header>
+
+    <main class="mt-20 flex flex-col sm:px-40">
+        <div class="w-full flex flex-row justify-between p-3 pl-5 bg-blue-500 text-white    sm:mt-4">
+            <p id="header-health">Health Education - Blog</p>
+
+            <a title="close" href="/index.html">
+                <i class="fa-solid fa-book fa-lg" style="color: #ffffff;"></i>
+            </a>
+
+        </div>
+
+        <section dir="ltr" class="w-full p-4 ">
+
+            <div class="w-full text-justify tracking-wider    scroll-ps-6 snap-y ">
+                <p>In today's fast-paced world, where technology and advancements seem to dominate every aspect of our
+                    lives, the importance of health education cannot be overstated. Health education plays a vital role
+                    in empowering individuals to make informed decisions about their well-being, leading to healthier
+                    lifestyles and improved overall quality of life.</p>
+
+                <h3 class="w-56 bg-orange-500 mt-4 p-1 text-white">What is Health Education?</h3>
+
+                <p>Health education is a process that aims to provide individuals, families, and communities with the
+                    knowledge, skills, and resources they need to make healthy choices. It encompasses a wide range of
+                    topics, including nutrition, physical activity, mental health, disease prevention, substance abuse,
+                    sexual health, and more. The goal of health education is to promote wellness, prevent illnesses and
+                    injuries, and foster a culture of health and well-being.
+
+                    Empowering Individuals Through Knowledge One of the key benefits of health education is its ability
+                    to empower individuals through knowledge.
+                    When people understand the importance of healthy behaviors, they are more likely to adopt them into
+                    their daily lives. For example, educating individuals about the dangers of smoking and the benefits
+                    of quitting can lead to reduced smoking rates and improved respiratory health in the community.
+
+                    Similarly, teaching proper nutrition and the importance of regular exercise can help combat obesity
+                    and related health issues. By providing individuals with the information they need to make healthy
+                    choices, health education empowers them to take control of their well-being and live healthier
+                    lives.
+
+                    Prevention is Better Than Cure
+
+                    Another significant aspect of health education is its focus on prevention. By educating people about
+                    the risks of certain behaviors and the steps they can take to prevent health problems, we can reduce
+                    the burden on healthcare systems and improve overall public health.
+
+                    For instance, educating individuals about the importance of vaccinations can help prevent the spread
+                    of infectious diseases. Likewise, teaching proper hand hygiene and sanitation practices can reduce
+                    the transmission of illnesses such as colds, flu, and foodborne diseases.
+
+                    Mental Health Awareness
+
+                    In recent years, there has been a growing recognition of the importance of mental health education.
+                    Mental health issues, such as anxiety, depression, and stress, can have a significant impact on an
+                    individual's overall well-being. By promoting mental health awareness and providing resources for
+                    coping and seeking help, health education can play a crucial role in supporting mental wellness.
+
+                    Health Education in Schools and Communities
+
+                    Health education is typically delivered through various channels, including schools, community
+                    organizations, healthcare providers, and online platforms. Schools play a particularly important
+                    role in health education, as they can reach a large number of young people and instill healthy
+                    habits early in life.
+
+                    In addition to formal education settings, community-based programs and initiatives can also be
+                    effective in promoting health education. These programs may include workshops, seminars, health
+                    fairs, and outreach activities that engage individuals and families in learning about health and
+                    wellness.
+
+                    The Role of Technology in Health Education
+
+                    Technology has revolutionized the way we access information and communicate with one another, and it
+                    has also transformed health education. With the rise of digital platforms and mobile apps,
+                    individuals can now access a wealth of health information and resources at their fingertips.
+
+                    From fitness apps that track physical activity to online courses on nutrition and healthy cooking,
+                    technology has made health education more accessible and convenient than ever before. It has also
+                    enabled healthcare providers to reach a broader audience and deliver personalized health education
+                    and support.
+
+                    Conclusion
+
+                    In conclusion, health education plays a crucial role in empowering individuals to make informed
+                    decisions about their well-being. By providing knowledge, skills, and resources, health education
+                    promotes wellness, prevents illnesses, and fosters a culture of health and well-being in
+                    communities. As we continue to prioritize health education and leverage technology to expand its
+                    reach, we can create a healthier and happier future for generations to come.
+                </p>
+
+
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full flex flex-col bg-slate-50">
+
+        <section class="my-10 flex flex-col sm:flex-row sm:justify-around sm:gap-16 ">
+            <div>
+                <span class="flex flex-row justify-left items-center gap-2 text-2xl text-slate-600 pl-8">
+                    <img src="/near dr. logo.png" class="w-8 h-8">
+                    <lable>Near Dr.</lable>
+                </span>
+
+                <div>
+                    <ul class="flex flex-col text-lg pl-8 p-4 text-gray-400 ">
+                        <li><a href="#" class="hover:text-gray-500">About Us</a></li>
+                        <li><a href="#" class="hover:text-gray-500">Annual Checkup</a></li>
+                        <li><a href="#" class="hover:text-gray-500">Blog</a></li>
+                        <li><a href="#" class="hover:text-gray-500">How it Works</a></li>
+                    </ul>
+
+                    <ul class="flex flex-col text-lg pl-8 text-gray-400 ">
+                        <li><a href="#" class="hover:text-gray-500">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-gray-500">Countect Us</a></li>
+                        <li><a href="#" class="hover:text-gray-500">FAQ's</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+
+            <div class="flex flex-col">
+                <label class="text-xl text-slate-600 pl-8 pt-6">Top Insurances</label>
+                <ul class="flex flex-col text-lg pl-8 p-4 text-gray-400 ">
+                    <li><a href="/Health Education Page/health-education-page.html" class="hover:text-gray-500">Health
+                            Education</a></li>
+                    <li><a href="/Serivces Page/services.html" class="hover:text-gray-500">Emergency Services</a></li>
+                    <li><a href="/Specialist Doctors Page/specialist-doctors-page.html"
+                            class="hover:text-gray-500">Specialist Doctors</a></li>
+    
+                </ul>
+            </div>
+            
+
+            <div class="flex flex-col pl-8 p-4 gap-6">
+                <label class="text-xl text-slate-600">Follow US</label>
+                <div class="flex flex-row gap-6">
+                    <span>
+                        <a href="#"><i class="fa-brands fa-linkedin fa-xl" style="color: rgb(0, 80, 252);"></i></a>
+                    </span>
+    
+                    <span>
+                        <a href="#" class="follow insta"><i class="fa-brands fa-instagram fa-xl" style="color: rgb(246, 2, 225);"></i></a>
+                    </span>
+    
+                    <span>
+                        <a href="#" class="follow twitter"><i class="fa-brands fa-x-twitter fa-xl" style="color: rgb(3, 3, 3);"></i></a>
+                    </span>
+    
+                    <span>
+                        <a href="#" class="follow youtube"><i class="fa-brands fa-youtube fa-xl" style="color: red;"></i></a>
+                    </span>
+
+                </div>
+                
+            </div>
+
+        </section>
+
+        <section class="w-full p-4 bg-gray-100 flex flex-col justify-around items-center gap-2 sm:flex-row">
+            <p class="text-sm text-gray-800">All rights reserved by NearDr.com 2024</p>
+
+            <span class="flex gap-4 text-xs text-slate-600 sm:text-sm">
+                <p class="text-blue-800">Privacy Policy</p>
+            <p>Terms and Conditions</p>
+        </span>
+        </section>
+    </footer>
+
+
+
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

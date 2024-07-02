@@ -7,17 +7,25 @@
     <meta name="keywords" content="Synoize">
     <meta name="description" content="----------------------">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/svg+xml" href="near dr. logo.png" />
+    <link rel="stylesheet" href="globle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>signup account | Near Dr.</title>
 </head>
 
 <body>
+    <div id="preloader" class="bg-black -mt-20 h-full w-full fixed flex flex-col justify-center items-center gap-2">
+
+        <span class="w-12 h-12 border-4 border-r-red-600 rounded-full  flex justify-center items-center"></span>
+        <p class="text-white text-2xl">Near Dr.</p>
+    </div>
+
     <header class="fixed -mt-20 w-full bg-slate-100 shadow-lg shadow-state-500/50">
 
         <div class=" w-full h-22 p-4 flex flex-row justify-between items-center gap-4">
 
             <!-- code for logo -->
-            <a title="Near Dr." href="/index.html"><img src="/near dr. logo.png" alt="Near Dr." class="w-24"></a>
+            <a title="Near Dr." href="index.html"><img src="near dr. logo.png" alt="Near Dr." class="w-24"></a>
             <!-- code for logo -->
 
             <div class="w-full "></div>
@@ -25,7 +33,7 @@
             <!-- code for menu -->
             <ul class="hidden sm:block sm:flex sm:gap-6 sm:mt-2 sm:mr-2">
                 <li class="flex flex-row  items-center">
-                    <a href="/index.html" class="flex flex-col  items-center gap-1"><i class="fa-solid fa-house fa-sm"
+                    <a href="index.html" class="flex flex-col  items-center gap-1"><i class="fa-solid fa-house fa-sm"
                             style="color: #888888;"></i>
                         <p>Home</p>
                     </a>
@@ -47,7 +55,7 @@
 
             <!-- code for login button -->
             <button class="w-20 bg-blue-500 pl-4 pr-4 p-1.5 text-white hover:bg-blue-600 hover:rounded"><a
-                    href="/login Page/login-page.html" class="">Login</a></button>
+                    href="login-page.html" class="">Login</a></button>
             <!-- code for login button -->
 
             <!-- code for in mobile menu -->
@@ -65,7 +73,7 @@
                 </li>
 
                 <li class="pl-4 p-2.5  bg-slate-200 hover:bg-slate-100">
-                    <a href="/index.html" class="flex flex-row items-center gap-3"><i class="fa-solid fa-house fa-sm"
+                    <a href="index.html" class="flex flex-row items-center gap-3"><i class="fa-solid fa-house fa-sm"
                             style="color: #888888;"></i>
                         <p>Home</p>
                     </a>
@@ -96,7 +104,7 @@
         <section class="w-5/6 flex flex-col m-8 p-6 border-2 sm:w-2/6 bg-slate-50">
 
             <div class="flex flex-col justify-center items-center gap-3">
-                <img src="/near dr. logo.png" class="w-12 h-12" <h1>NearDr.com</h1>
+                <img src="near dr. logo.png" class="w-12 h-12" <h1>NearDr.com</h1>
 
                 <h3 class="text-slate-600 font-normal">Welcome!</h3>
             </div>
@@ -104,7 +112,7 @@
             <div action="#" class="flex justify-center">
                 <span class="m-2 p-2 rounded border-2 hover:bg-slate-50">
                     <a href="#" class="flex flex-row justify-center items-center gap-1">
-                        <img src="/login Page/google-logo-clipart.png" class="w-5">
+                        <img src="google-logo-clipart.png" class="w-5">
                         <p class="text-sm text-slate-900">Sign in with Google</p>
                     </a>
                 </span>
@@ -123,13 +131,13 @@
                 <button class="-mt-2 mb-4 pl-6 pr-6 p-2 bg-blue-600 text-white hover:bg-blue-500 hover:rounded" onclick="account()">Create Account</button>
                 
                 <script>function account(){
-                    window.open(URL="/Create Account/create-account-page.html")
+                    window.open(URL="create-account-page.html")
                 }</script>
             </form>
 
             <div class="flex flex-row justify-between items-center gap-1">
                 <hr class="w-2/6 sm:w-3/6">
-                <p class="text-xs text-nowrap text-slate-600 hover:text-blue-600"><a href="/login Page/login-page.html">
+                <p class="text-xs text-nowrap text-slate-600 hover:text-blue-600"><a href="login-page.html">
                         OR LOGIN </a></p>
                 <hr class="w-2/6 sm:w-3/6">
             </div>
@@ -152,7 +160,7 @@
 
 
 
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

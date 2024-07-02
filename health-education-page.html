@@ -7,26 +7,34 @@
     <meta name="keywords" content="Near Dr., NearDr., Neardr, NEARDR., NEARDR, neardr.">
     <meta name="description" content="----------------------">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/svg+xml" href="near dr. logo.png" />
+    <link rel="stylesheet" href="globle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Health Education | Near Dr.</title>
 </head>
 
 <body>
+    <div id="preloader" class="bg-black -mt-20 h-full w-full fixed flex flex-col justify-center items-center gap-2">
+
+        <span class="w-12 h-12 border-4 border-r-red-600 rounded-full  flex justify-center items-center"></span>
+        <p class="text-white text-2xl">Near Dr.</p>
+    </div>
+
     <header class="fixed -mt-20 w-full bg-slate-100 shadow-lg shadow-state-500/50">
 
         <div class=" w-full h-22 p-4 flex flex-row justify-between items-center gap-4">
 
             <!-- code for logo -->
-            <a href="/index.html" title="Near Dr."><img src="/near dr. logo.png" alt="Near Dr." class="w-24"></a>
+            <a href="index.html" title="Near Dr."><img src="near dr. logo.png" alt="Near Dr." class="w-24"></a>
             <!-- code for logo -->
 
             <!-- code for search -->
             <form action="#" class="flex w-full justify-center" >
 
                 <input placeholder="What's Your Problem!" name="search"
-                    class="w-5/6 outline-none pl-4 p-2 border hidden         sm:block">
+                    class="w-5/6 outline-none pl-4 p-2 border hidden sm:block">
 
-                <button title="search" class="w-11 h-11 p-2 border bg-white hidden hover:bg-slate-50         sm:block">
+                <button title="search" class="w-11 h-11 p-2 border bg-white hidden hover:bg-slate-50 sm:block">
                     <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #d3d3d3;" class="border-2"></i>
                 </button>
 
@@ -65,7 +73,7 @@
 
             <!-- code for login button -->
             <button class="w-20 bg-blue-500 pl-4 pr-4 p-1.5 text-white hover:bg-blue-600 hover:rounded"><a
-                href="/login Page/login-page.html" class="">Login</a></button>
+                href="login-page.html" class="">Login</a></button>
         <!-- code for login button -->
 
             <!-- code for in mobile menu -->
@@ -124,7 +132,7 @@
         <div class="w-full flex flex-row justify-between p-3 pl-5 bg-blue-500 text-white    sm:mt-4">
             <p id="header-health">Health Education - Blog</p>
 
-            <a title="close" href="/index.html">
+            <a title="close" href="index.html">
                 <i class="fa-solid fa-book fa-lg" style="color: #ffffff;"></i>
             </a>
 
@@ -217,7 +225,7 @@
         <section class="my-10 flex flex-col sm:flex-row sm:justify-around sm:gap-16 ">
             <div>
                 <span class="flex flex-row justify-left items-center gap-2 text-2xl text-slate-600 pl-8">
-                    <img src="/near dr. logo.png" class="w-8 h-8">
+                    <img src="near dr. logo.png" class="w-8 h-8">
                     <lable>Near Dr.</lable>
                 </span>
 
@@ -243,10 +251,10 @@
             <div class="flex flex-col">
                 <label class="text-xl text-slate-600 pl-8 pt-6">Top Insurances</label>
                 <ul class="flex flex-col text-lg pl-8 p-4 text-gray-400 ">
-                    <li><a href="/Health Education Page/health-education-page.html" class="hover:text-gray-500">Health
+                    <li><a href="health-education-page.html" class="hover:text-gray-500">Health
                             Education</a></li>
-                    <li><a href="/Serivces Page/services.html" class="hover:text-gray-500">Emergency Services</a></li>
-                    <li><a href="/Specialist Doctors Page/specialist-doctors-page.html"
+                    <li><a href="services.html" class="hover:text-gray-500">Emergency Services</a></li>
+                    <li><a href="specialist-doctors-page.html"
                             class="hover:text-gray-500">Specialist Doctors</a></li>
     
                 </ul>
@@ -291,7 +299,7 @@
 
 
 
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

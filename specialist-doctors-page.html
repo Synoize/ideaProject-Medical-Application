@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Near Dr., NearDr.">
     <meta name="description" content="----------------------">
+    <link rel="stylesheet" href="globle.css">
+    <link rel="icon" type="image/svg+xml" href="near dr. logo.png" />
     <link rel="stylesheet" href="specialist-doctors-page-style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -14,12 +16,18 @@
 </head>
 
 <body>
+    <div id="preloader" class="bg-black -mt-20 h-full w-full fixed flex flex-col justify-center items-center gap-2">
+
+        <span class="w-12 h-12 border-4 border-r-red-600 rounded-full  flex justify-center items-center"></span>
+        <p class="text-white text-2xl">Near Dr.</p>
+    </div>
+
     <header class="fixed -mt-20 w-full bg-slate-100 shadow-lg shadow-state-500/50">
 
         <div class=" w-full h-22 p-4 flex flex-row justify-between items-center gap-4">
 
             <!-- code for logo -->
-            <a href="/index.html" title="Near Dr."><img src="/near dr. logo.png" alt="Near Dr." class="w-24"></a>
+            <a href="index.html" title="Near Dr."><img src="near dr. logo.png" alt="Near Dr." class="w-24"></a>
             <!-- code for logo -->
 
             <!-- code for search -->
@@ -68,7 +76,7 @@
 
             <!-- code for login button -->
             <button class="w-20 bg-blue-500 pl-4 pr-4 p-1.5 text-white hover:bg-blue-600 hover:rounded"><a
-                    href="/login Page/login-page.html" class="">Login</a></button>
+                    href="login-page.html" class="">Login</a></button>
             <!-- code for login button -->
 
             <!-- code for in mobile menu -->
@@ -125,7 +133,7 @@
 
     <main class="mt-20 flex flex-col ">
         <div class="w-full p-3 bg-orange-500 flex items-center gap-2 text-white sm:mt-4">
-            <a href="/index.html" title="back"><i class="fa-solid fa-arrow-left fa-lg" style="color: #e9e9e9;"></i></a>
+            <a href="index.html" title="back"><i class="fa-solid fa-arrow-left fa-lg" style="color: #e9e9e9;"></i></a>
             <h3>Specialists Doctors</h3>
         </div>
 
@@ -417,27 +425,27 @@
 
         <section class="w-full flex flex-wrap justify-center items-center gap-8 my-16">
             <nav class="w-32 h-32 bg-blue-500 flex justify-center rounded hover:bg-blue-400">
-                <a href="/Serivces Page/services.html" class="flex flex-col justify-center items-center ">
-                    <img src="/emergency services.png" class="w-12">
+                <a href="services.html" class="flex flex-col justify-center items-center ">
+                    <img src="emergency services.png" class="w-12">
                     <p class="text-center text-white">Emergency Services</p>
                 </a>
             </nav>
             <nav class="w-32 h-32 bg-blue-500 flex justify-center rounded hover:bg-blue-400">
-                <a href="/Specialist Doctors Page/specialist-doctors-page.html"
+                <a href="specialist-doctors-page.html"
                     class="flex flex-col justify-center items-center gap-1">
-                    <img src="/specialist.png" class="w-16">
+                    <img src="specialist.png" class="w-16">
                     <p class="text-white">Specialist</p>
                 </a>
             </nav>
             <nav class="w-32 h-32 bg-blue-500 flex justify-center rounded hover:bg-blue-400">
                 <a href="#" class="flex flex-col justify-center items-center gap-1">
-                    <img src="/my doctor.png" class="w-16">
+                    <img src="my doctor.png" class="w-16">
                     <p class="text-white">My Doctor</p>
                 </a>
             </nav>
             <nav class="w-32 h-32 bg-blue-500 flex justify-center rounded hover:bg-blue-400">
                 <a href="#" class="flex flex-col justify-center items-center gap-3">
-                    <img src="/appointment.png" class="w-20">
+                    <img src="appointment.png" class="w-20">
                     <p class="text-white">Appointments</p>
                 </a>
             </nav>
@@ -460,7 +468,7 @@
 
 
 
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

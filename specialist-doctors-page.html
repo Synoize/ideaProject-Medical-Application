@@ -454,18 +454,83 @@
 
     </main>
 
-    <footer class="w-full h-80 flex flex-row bg-slate-50">
+    <footer class="w-full flex flex-col bg-slate-50">
 
-        <div class=" w-2/6  flex flex-col bg-blue-100">
-            <span><a href="#"><i class="fa-brands fa-linkedin in"></i></a></span>
-            <span><a href="#" class="follow insta"><i class="fa-brands fa-instagram insta"></i></a></span>
-            <span><a href="#" class="follow twitter"><i class="fa-brands fa-x-twitter x"></i></a></span>
-            <span><a href="#" class="follow youtube"><i class="fa-brands fa-youtube yt"></i></a></span>
-        </div>
+        <section class="my-10 flex flex-col sm:flex-row sm:justify-around sm:gap-16 ">
+            <div>
+                <span class="flex flex-row justify-left items-center gap-2 text-2xl text-slate-600 pl-8">
+                    <img src="near dr. logo.png" class="w-8 h-8">
+                    <lable>Near Dr.</lable>
+                </span>
+
+                <div>
+                    <ul class="flex flex-col text-lg pl-8 p-4 text-gray-400 ">
+                        <li><a href="#" class="hover:text-gray-500">About Us</a></li>
+                        <li><a href="#" class="hover:text-gray-500">Annual Checkup</a></li>
+                        <li><a href="#" class="hover:text-gray-500">Blog</a></li>
+                        <li><a href="#" class="hover:text-gray-500">How it Works</a></li>
+                    </ul>
+
+                    <ul class="flex flex-col text-lg pl-8 text-gray-400 ">
+                        <li><a href="#" class="hover:text-gray-500">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-gray-500">Countect Us</a></li>
+                        <li><a href="#" class="hover:text-gray-500">FAQ's</a></li>
+                    </ul>
+                </div>
 
 
+            </div>
+
+
+            <div class="flex flex-col">
+                <label class="text-xl text-slate-600 pl-8 pt-6">Top Insurances</label>
+                <ul class="flex flex-col text-lg pl-8 p-4 text-gray-400 ">
+                    <li><a href="health-education-page.html" class="hover:text-gray-500">Health
+                            Education</a></li>
+                    <li><a href="services.html" class="hover:text-gray-500">Emergency Services</a></li>
+                    <li><a href="specialist-doctors-page.html" class="hover:text-gray-500">Specialist Doctors</a></li>
+
+                </ul>
+            </div>
+
+
+            <div class="flex flex-col pl-8 p-4 gap-6">
+                <label class="text-xl text-slate-600">Follow US</label>
+                <div class="flex flex-row gap-6">
+                    <span>
+                        <a href="#"><i class="fa-brands fa-linkedin fa-xl" style="color: rgb(0, 80, 252);"></i></a>
+                    </span>
+
+                    <span>
+                        <a href="#" class="follow insta"><i class="fa-brands fa-instagram fa-xl"
+                                style="color: rgb(246, 2, 225);"></i></a>
+                    </span>
+
+                    <span>
+                        <a href="#" class="follow twitter"><i class="fa-brands fa-x-twitter fa-xl"
+                                style="color: rgb(3, 3, 3);"></i></a>
+                    </span>
+
+                    <span>
+                        <a href="#" class="follow youtube"><i class="fa-brands fa-youtube fa-xl"
+                                style="color: red;"></i></a>
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="w-full p-4 bg-gray-100 flex flex-col justify-around items-center gap-2 sm:flex-row">
+            <p class="text-sm text-gray-800">All rights reserved by NearDr.com 2024</p>
+
+            <span class="flex gap-4 text-xs text-slate-600 sm:text-sm">
+                <p class="text-blue-800">Privacy Policy</p>
+                <p>Terms and Conditions</p>
+            </span>
+        </section>
     </footer>
-
 
 
     <script src="script.js"></script>
